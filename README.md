@@ -54,3 +54,13 @@
         "source.fixAll.eslint": true
     }
 ```
+### Toaster set up
+    - import Toaster and use in main.jsx
+
+### set up redux store
+    - import configureStore from Redux Toolkit library and create store
+    - create slice using createSlice method and export the slice Reducer
+    - import the slice Reducer in store.js and use it in Reducer object inside configureStore.
+
+### setting up React router 
+    - import BrowserRouter in main.jsx and wrap all the component inside it so that all the component could access the Routing feature.
