@@ -32,3 +32,25 @@
     @tailwind components;
     @tailwind utilities;
 ```
+### Adding eslint rules for auto import sort and react hot Toast
+1.install simple import sort package
+```
+    npm i -D eslint-plugin-simple-import-sort
+```
+2.Add Rule in '.eslint.cjs'
+```
+    'simple-import-sort/imports': 'error'
+```
+3.add simple-import sort plugin in '.eslint.cjs'
+```
+    plugins: [..., 'simple-import-sort']
+```
+4.To enable auto import sort on file save in vscode
+
+    - open 'setting.json'
+    - add the following config
+```
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    }
+```
