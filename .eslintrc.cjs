@@ -14,6 +14,7 @@ module.exports = {
   rules: {
     'simple-import-sort/imports': 'error',
     'react/jsx-no-target-blank': 'off',
+    "react-props/types":0,
     'react-refresh/only-export-components': [
       'warn',
       { allowConstantExport: true },
