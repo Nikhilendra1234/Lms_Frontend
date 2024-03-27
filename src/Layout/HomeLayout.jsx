@@ -77,12 +77,12 @@ function HomeLayout({ children }) {
                             <Link to="/about">About Us</Link>
                         </li>
                         {!isLoggedIn && (
-                            <li className="absolute bottom-0 w-[90%">
+                            <li className="absolute bottom-0 w-[90%]">
                                 <div className="w-full flex items-center justify-center">
-                                    <button className="btn-primary bg-blue-900 px-4 py-1 font-semibold rounded-md w-full">
+                                    <button className="btn-primary text-yellow-100 bg-blue-900 px-4 py-1 font-semibold rounded-md w-full">
                                         <Link to="/login">Login</Link>
                                     </button>
-                                    <button className="btn-secondary bg-gray-700 px-4 py-1 font-semibold rounded-md w-full">
+                                    <button className="btn-secondary text-yellow-300 bg-gray-900 px-4 py-1 font-semibold rounded-md w-full">
                                         <Link to="/login">Signup</Link>
                                     </button>
                                 </div>
