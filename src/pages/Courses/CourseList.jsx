@@ -2,9 +2,9 @@ import { useEffect } from "react";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom"
 
-import CourseCard from "../Components/CourseCard.jsx";
-import HomeLayout from "../Layout/HomeLayout.jsx"
-import { getAllCourses } from "../Redux/Slices/CourseSlice";
+import CourseCard from "../../Components/CourseCard.jsx";
+import HomeLayout from "../../Layout/HomeLayout.jsx"
+import { getAllCourses } from "../../Redux/Slices/CourseSlice.js";
 
 function CourseList(){
     const dispatch=useNavigate();
