@@ -77,7 +77,8 @@ function HomeLayout({ children }) {
                         <li>
                             <Link to="/about">About Us</Link>
                         </li>
-                        {!isLoggedIn && (
+                        {
+                         !isLoggedIn && (
                             <li className="absolute bottom-0 w-[90%]">
                                 <div className="w-full flex items-center justify-center">
                                     <button className="btn-primary text-yellow-100 bg-blue-900 px-4 py-1 font-semibold rounded-md w-full">
@@ -89,7 +90,7 @@ function HomeLayout({ children }) {
                                 </div>
                             </li>
                         )}
-                        {isLoggedIn && (
+                        { isLoggedIn && (
                             <li className="absolute bottom-0 w-[90%">
                                 <div className="w-full flex items-center justify-center">
                                     <button className="btn-primary px-4 text-yellow-100 bg-blue-900 py-1 font-semibold rounded-md w-full">

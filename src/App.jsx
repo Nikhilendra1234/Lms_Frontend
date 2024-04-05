@@ -13,6 +13,7 @@ import HomePage from './pages/Homepage.jsx'
 import Login from './pages/Login.jsx'
 import NotFound from './pages/NotFound.jsx'
 import SignUp from './pages/SignUp.jsx'
+import Profile from './pages/user/userProfile.jsx'
 
 
 
@@ -29,6 +30,9 @@ function App() {
         <Route path='/course/description' element={<CourseDesc />}/>
         <Route element={<RequiereAuth allowedrole={["ADMIN"]}/>}>
             <Route path='/course/create' element={<CreateCourse />}/>
+        </Route>
+        <Route element={<RequiereAuth allowedrole={["ADMIN","USER"]}/>}>
+            <Route path='/user/profile' element={<Profile />}/>
         </Route>
         <Route path='/contact' element={<Contact />}/>
         <Route path='/signup' element={<SignUp />}/>
