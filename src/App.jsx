@@ -12,6 +12,8 @@ import Denied from './pages/Denied.jsx'
 import HomePage from './pages/Homepage.jsx'
 import Login from './pages/Login.jsx'
 import NotFound from './pages/NotFound.jsx'
+import Checkout from './pages/Payment/Checkout.jsx'
+import CheckoutSuccess from './pages/Payment/CheckSuccess.jsx'
 import SignUp from './pages/SignUp.jsx'
 import EditProfile from './pages/user/editProfile.jsx'
 import Profile from './pages/user/userProfile.jsx'
@@ -36,7 +38,9 @@ function App() {
             <Route path='/user/profile' element={<Profile />}/>
             <Route path='/user/editprofile' element={<EditProfile />}/>
         </Route>
-        
+        <Route path='/checkout' element={<Checkout />}/>
+        <Route path='/checkout/success' element={<CheckoutSuccess />}/>
+
         <Route path='/contact' element={<Contact />}/>
         <Route path='/signup' element={<SignUp />}/>
         <Route path='/login' element={<Login />}/>
