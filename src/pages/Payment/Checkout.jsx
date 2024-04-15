@@ -15,8 +15,6 @@ function Checkout(){
 
     const razorpayKey=useSelector(state=>state?.razorpay?.key);
     const subscription_id=useSelector(state=>state?.razorpay?.subscription_id);
-    const isPaymentVerified=useSelector(state=>state?.razorpay?.isPaymentVerified);
-    const userdata=useSelector(state=>state?.auth?.data);
 
     const paymentDetails={
         razorpay_payment_id:"",
@@ -66,7 +64,7 @@ function Checkout(){
 
     useEffect(()=>{
         load();
-    },[]);
+    });
 
     return(
         <HomeLayout>
