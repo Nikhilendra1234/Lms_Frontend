@@ -8,6 +8,7 @@ import Contact from './pages/ContactUs.jsx'
 import CourseDesc from './pages/Courses/CourseDesc.jsx'
 import CourseList from './pages/Courses/CourseList.jsx'
 import CreateCourse from './pages/Courses/CreateCourse.jsx'
+import DisplayLectures from './pages/Courses/DisplayCourse.jsx'
 import Denied from './pages/Denied.jsx'
 import HomePage from './pages/Homepage.jsx'
 import Login from './pages/Login.jsx'
@@ -43,6 +44,7 @@ function App() {
             <Route path='/checkout' element={<Checkout />}/>
             <Route path='/checkout/success' element={<CheckoutSuccess />}/>
             <Route path='/checkout/fail' element={<CheckoutFail />}/>
+            <Route path='/course/displaylectures' element={<DisplayLectures />}/>
         </Route>
         
         <Route path='/contact' element={<Contact />}/>
