@@ -8,7 +8,8 @@ import Contact from './pages/ContactUs.jsx'
 import CourseDesc from './pages/Courses/CourseDesc.jsx'
 import CourseList from './pages/Courses/CourseList.jsx'
 import CreateCourse from './pages/Courses/CreateCourse.jsx'
-import DisplayLectures from './pages/Courses/DisplayCourse.jsx'
+import AddLecture from './pages/Dashboard/AddLecture.jsx'
+import DisplayLectures from './pages/Dashboard/DisplayCourse.jsx'
 import Denied from './pages/Denied.jsx'
 import HomePage from './pages/Homepage.jsx'
 import Login from './pages/Login.jsx'
@@ -36,6 +37,7 @@ function App() {
         
         <Route element={<RequiereAuth allowedrole={["ADMIN"]}/>}>
             <Route path='/course/create' element={<CreateCourse />}/>
+            <Route path='/course/addlecture' element={<AddLecture />}/>
         </Route>
 
         <Route element={<RequiereAuth allowedrole={["ADMIN","USER"]}/>}>
