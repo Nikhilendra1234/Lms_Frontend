@@ -8,7 +8,7 @@ const initialState={
     subscribedCount:0
 }
 
-const getStatsData=createAsyncThunk("stat/get",async()=>{
+export const getStatsData=createAsyncThunk("stat/get",async()=>{
     try {
         const response= axiosInstance.get('/admin/stat/user');
         toast.promise(response,{
@@ -32,3 +32,4 @@ const statSlice=createSlice({
 })
 
 export default statSlice.reducer
+
